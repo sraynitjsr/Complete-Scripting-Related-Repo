@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 my_variable="Subhradeep Ray"
 echo "I am "$my_variable
