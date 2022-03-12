@@ -20,6 +20,7 @@ done
 
 echo
 
-name="Subhradeep"
-name+=" Ray"
-echo "String Concatination =>" $name
+firstName="Subhradeep"
+lastName="Ray"
+fullName="$firstName $lastName"
+echo "String Concatination =>" $fullName
