@@ -12,10 +12,15 @@ echo "Before Unset "$my_unset_var
 unset my_unset_var
 echo "After Unset "$my_unset_var
 
-echo "Reading Environment Variables "
+echo "Reading Environment Variables =>"
 for TOKEN in $*
 do
-   echo $TOKEN
+   echo -n $TOKEN ' '
 done
 
+echo
+
+name="Subhradeep"
+name+=" Ray"
+echo "String Concatination =>" $name
 
