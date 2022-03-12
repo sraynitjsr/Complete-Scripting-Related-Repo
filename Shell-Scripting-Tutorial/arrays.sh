@@ -1,16 +1,22 @@
 #!/bin/sh
 
-my_array_name={100,007,200,007}
+name[0]=1
+name[1]=2
+name[2]=3
+name[3]=4
+name[4]=5
 
-my_array_name[0]=1
-my_array_name[1]=2
-my_array_name[2]=3
-my_array_name[3]=4
-my_array_name[4]=5
+echo "All Values of The Array With * are =>" ${name[*]}
 
-my_array_name[3]=2020
+name[3]=100
+echo "All Values of The Array With @ are => " ${name[@]}
 
-echo "Third Value is " ${my_array_name[3]}
+echo "Last Elemt of The Array is =>" ${name[4]}
 
+echo -n "Iterate Over an Array => "
+for ITEM in ${name[*]}
+do
+    echo -n $ITEM ' '
+done
 
-
+echo
