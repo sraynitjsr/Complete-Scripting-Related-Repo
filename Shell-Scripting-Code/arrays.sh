@@ -9,15 +9,24 @@ name[4]=5
 echo "All Values of The Array With * are =>" ${name[*]}
 
 name[3]=100
-echo "All Values of The Array With @ are => " ${name[@]}
+echo "All Values of The Array With @ are =>" ${name[@]}
 
 echo "Last Elemt of The Array is =>" ${name[4]}
 
-echo -n "Iterate Over an Array => "
+echo -n "Iterate Over an Array =>"
 for ITEM in ${name[*]}
 do
     echo -n $ITEM ' '
 done
+
+echo
+
+myStringArray[0]="Subhradeep"
+myStringArray[1]="Sachin"
+myStringArray[2]="Virat"
+myStringArray[3]="Rodger"
+myStringArray[4]="Ronaldo"
+echo "Avengers =>" ${myStringArray[@]}
 
 echo
 
